@@ -9,9 +9,20 @@
 </head>
 <body>
     <div id = "expenses">
-        <input type="text" class = "addexpense" placeholder="Date">
-        <input type="text" class = "addexpense" placeholder="Name">
-        <input type="text" class = "addexpense" placeholder="Amount">
+        <h2>Add a new item to your expenses</h2>
+            <form>
+                <input type="text" id = "date" class = "addexpense" placeholder="Date">
+                <input type="text" id = "name" class = "addexpense" placeholder="Name">
+                <input type="text" id = "amount" class = "addexpense" placeholder="Amount">
+            </form>
+        <button id = 'inputbutton'>Add expense</button>
+        <table id="tabli">
+            <tr>
+                <th>Date</th>
+                <th>Name</th>
+                <th>Amount</th>
+            </tr>
+        </table>
     </div>
 </body>
 </html>

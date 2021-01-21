@@ -1,1 +1,9 @@
-/* in the making
+table{
+    border: 1px solid black;
+    border-spacing: 15px;
+    text-align: left;
+}
+th, td{
+    padding:15 px;
+    width: 100px;
+}
