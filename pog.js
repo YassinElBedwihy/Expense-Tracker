@@ -1,17 +1,11 @@
 //in the making
-let date = document.getElementById('date');
-let nam = document.getElementById('name');
-let amount = document.getElementById('amount');
+let date = document.getElementById('date'); // 
+let nam = document.getElementById('name'); //   these are all normal inputs
+let amount = document.getElementById('amount'); //
 
-let totalRowNum = 0;
+
 
 let table = document.getElementById('tabli')
-
-let rownum = table.getElementsByTagName("tr")
-
-for (i = 0; i <= rownum.length; i++) {
-    totalRowNum++;
-}
 
 function getVal(){
     let newdate = date.value;
@@ -40,11 +34,5 @@ let input = document.getElementById('inputbutton');
 
 input.addEventListener("click", () => {
     updateTable(getVal());
-    Array.from(document.getElementsByClassName("addexpense")).forEach(elem => elem.value = "")
+    Array.from(document.getElementsByClassName("addexpense"), elem => elem.value = "")
 })
-
-
-
-
-
-
