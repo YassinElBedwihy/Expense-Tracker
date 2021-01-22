@@ -12,9 +12,9 @@ function getVal(){
     let newname = nam.value;
     let newamount = amount.value;
     
-    if(!newdate || !newname || !newamount) return alert('Please enter all values.')
-    if(isNaN(newamount)) return alert('Your amount should be a number')
-    if(!isNaN(newname)) return alert('Your name shouldnt be a number')
+    if(!newdate || !newname || !newamount) return null;
+    if(isNaN(newamount)) return null;
+    if(!isNaN(newname)) return null;
     
     return [newdate, newname, newamount]
 }
@@ -24,6 +24,7 @@ function updateTable(arr){
     let celld = row.insertCell(0);
     let celln = row.insertCell(1);
     let cella = row.insertCell(2);
+    let cellb = row.insertCell(3);
     celld.innerHTML = arr[0];
     celln.innerHTML = arr[1];
     cella.innerHTML = arr[2];
@@ -33,6 +34,11 @@ function updateTable(arr){
 let input = document.getElementById('inputbutton');
 
 input.addEventListener("click", () => {
-    updateTable(getVal());
-    Array.from(document.getElementsByClassName("addexpense"), elem => elem.value = "")
+    let arr = getVal();
+    if(getVal() === null){
+        return;
+    }else {
+        updateTable(arr);
+        Array.from(document.getElementsByClassName("addexpense"), elem => elem.value = "")
+    }
 })
