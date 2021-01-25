@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#tabli{
+    width: 400px;
+    margin: 0 auto;
+}
+
+#wrapper{
+    text-align:center;
+}
+
+.formi{
+    width: 400px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    margin: 0 auto;
+    gap: 10px;
+}
+
+#addexpense{
+    max-width: 200 px;
+}
+
