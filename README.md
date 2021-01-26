@@ -1,5 +1,5 @@
 # Expense-Tracker
-wip
+finished
 
 the delete button system looks like:
 
