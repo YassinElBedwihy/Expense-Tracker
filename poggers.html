@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense tracker</title>
+    <link rel="stylesheet" href="stylishpog.css">
+    <script defer src="pog.js"></script>
+</head>
+<body class="bg-gradient-to-r from-gray-900 to-gray-800 text-white">
+
+<div id="wrapper">
+    <h1 class="text-6xl font-bold p-5 mb-5">Expense tracker</h1>
+    <div id = "expenses">
+        <h2 class="text-lg">Add a new item to your expenses</h2>
+
+            <form class="font-bold mb-5 mt-3">
+                <div class="formi">
+                    Name:<input type="text" id = "name" class = "addexpense text-gray-400 m-2 rounded p-1" placeholder="What was the expense?"><br>
+                    Amount:<input type="text" id = "amount" class = "addexpense text-gray-400 m-2 rounded p-1" placeholder="How much did it cost?"><br>
+                    Date:<input type="date" id = "date" class = "addexpense text-gray-400 m-2 rounded p-1 float-right">
+                </div>
+            </form>
+
+        <button id ="inputbutton" class="border p-1 px-3 mb-12">Add expense</button>
+        <table id="tabli" class="table-fixed">
+            <tr>
+                <th colspan = "1">Date</th>
+                <th colspan = "1">Name</th>
+                <th colspan = "1" id = "amountTheader">Amount</th>
+                <th></th>
+            </tr>
+        </table>
+    </div>
+</div>
+
+</body>
+</html>
