@@ -31169,6 +31169,8 @@ video {
 
 #tabli{
   width: 400px;
+  border-collapse: separate;
+  border-spacing: 10px;
   margin: 0 auto;
 }
 
@@ -31187,6 +31189,15 @@ video {
 
 #addexpense{
   max-width: 200 px;
+}
+
+.deletebuttons{
+  text-align: center;
+  padding: 0.5rem;
+  color: white;
+  background-color: #ff2c2cbd;
+  border-radius: 8px;
+  cursor: pointer;
 }
 
 @media (min-width: 640px) {
@@ -183908,4 +183919,3 @@ video {
             animation: bounce 1s infinite;
   }
 }
-

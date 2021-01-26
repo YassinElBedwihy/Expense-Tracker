@@ -4,6 +4,8 @@
 
 #tabli{
     width: 400px;
+    border-collapse: separate;
+    border-spacing: 10px;
     margin: 0 auto;
 }
 
@@ -24,3 +26,11 @@
     max-width: 200 px;
 }
 
+.deletebuttons{
+    text-align: center;
+    padding: 0.5rem;
+    color: white;
+    background-color: #ff2c2cbd;
+    border-radius: 8px;
+    cursor: pointer;
+}

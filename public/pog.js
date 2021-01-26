@@ -41,7 +41,7 @@ function updateTable([data, num, amount]){
     let button = document.createElement("input")
 
     button.type = "button";
-    button.value = "x";
+    button.value = "Delete";
     button.id = 1;
     button.className = "deletebuttons"
 
