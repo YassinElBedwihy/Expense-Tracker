@@ -8,3 +8,10 @@ the delete button system looks like:
 -each time delete button is pressed decrement all the row numbers greater than the row that got deleted by one
 
 you can review these parts in the js code in the updatetable function and input event listener.
+
+
+
+
+
+
+css sucks
